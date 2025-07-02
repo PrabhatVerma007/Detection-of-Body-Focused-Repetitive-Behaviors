@@ -41,44 +41,6 @@ The model was evaluated using **5-fold cross-validation** to ensure robust perfo
 * **📈 Reliable Results**: Small variance across folds demonstrates reproducible performance
 * **🏆 Best Performance**: Fold 1 achieved the highest test score of 76.93%
 
-## 🚀 Getting Started
-
-### Prerequisites
-
-```bash
-pip install torch numpy scikit-learn
-```
-
-### Installation
-
-```bash
-git clone https://github.com/yourusername/your-repo-name.git
-cd your-repo-name
-pip install -r requirements.txt
-```
-
-### Usage
-
-```python
-import torch
-
-# Load the trained model
-device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-checkpoint = torch.load('model_checkpoint.pth', map_location=device, weights_only=False)
-
-# Initialize and load model
-model = YourModelClass()  # Replace with your model class
-model.load_state_dict(checkpoint['model_state_dict'])
-model = model.to(device)
-model.eval()
-
-# Make predictions
-with torch.no_grad():
-    predictions = model(your_input_data)
-```
-
-## 📁 Project Structure
-
 ```
 ├── src/
 │   ├── model.py          # Model architecture
@@ -103,15 +65,6 @@ with torch.no_grad():
 * **Framework**: PyTorch
 * **Device Support**: CUDA/CPU compatible
 
-## 📈 Performance Analysis
-
-The model demonstrates:
-
-* **Stability**: Consistent performance across different data splits
-* **Generalization**: No significant overfitting observed
-* **Reliability**: Low variance in cross-validation results
-* **Robustness**: Performance range of 72.42% - 76.93% across folds
-
 ## 🛠️ Technical Notes
 
 ### Loading Checkpoints
@@ -130,9 +83,7 @@ with torch.serialization.safe_globals([numpy.core.multiarray.scalar]):
     checkpoint = torch.load(model_path, map_location=device)
 ```
 
-## 📊 Results Visualization
 
-![Cross-Validation Results](path/to/your/results_plot.png)
 
 ## 🤝 Contributing
 
@@ -142,21 +93,12 @@ with torch.serialization.safe_globals([numpy.core.multiarray.scalar]):
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 License
-
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 📞 Contact
-
-Your Name - [your.email@example.com](mailto:your.email@example.com)
-
-Project Link: [https://github.com/yourusername/your-repo-name](https://github.com/yourusername/your-repo-name)
 
 ## 🙏 Acknowledgments
 
-* \[List any acknowledgments, datasets used, or references]
-* \[Research papers or resources that helped]
-* \[Contributors or collaborators]
+* \[Contest Link](https://www.kaggle.com/competitions/cmi-detect-behavior-with-sensor-data)
 
 ---
 
