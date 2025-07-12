@@ -6,10 +6,6 @@ A robust machine learning model with comprehensive cross-validation evaluation a
 
 This model was developed for a Kaggle competition hosted by the **Child Mind Institute**, held between **May 30 to August 27** (3 months). The competition aimed at advancing gesture recognition through wearable sensor data.
 
-**Prizes & Awards:**
-
-* Total prize pool: **\$50,000**
-* Awards: **Points & Medals** for top-performing teams
 
 ## 🎯 Performance Overview
 
